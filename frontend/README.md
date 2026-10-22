@@ -10,10 +10,6 @@ VITE_MAPBOX_TOKEN = You can get your token here https://docs.mapbox.com/help/div
 
 Only add these after sprint 6
 
-VITE_CLERK_FRONTEND_API=
-
-CLERK_SECRET_KEY=
-
 VITE_FIREBASE_API_KEY=
 VITE_FIREBASE_AUTH_DOMAIN=
 VITE_FIREBASE_PROJECT_ID=

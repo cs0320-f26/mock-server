@@ -1,5 +1,6 @@
-import { useUser, SignInButton } from "@clerk/clerk-react";
-import axios from "axios";
+// import { Link } from "react-router-dom";
+// import { useUser } from "../../firebase/useUser";
+// import axios from "axios";
 
 type TripData = {
   title: string;
@@ -21,7 +22,7 @@ export default function SaveTripButton({ tripData }: SaveTripButtonProps) {
     // if (!isSignedIn) return;
     // try {
     //   const response = await axios.post("http://localhost:3001/savePins", {
-    //     userId: user?.id,
+    //     userId: user?.uid,
     //     ...tripData,
     //   });
     //   console.log("Trip saved:", response.data);
@@ -34,11 +35,11 @@ export default function SaveTripButton({ tripData }: SaveTripButtonProps) {
 
   // if (!isSignedIn) {
   //   return (
-  //     <SignInButton mode="modal">
+  //     <Link to="/login">
   //       <button className="bg-gray-400 text-white rounded px-4 py-2 cursor-pointer">
   //         Sign in to Save
   //       </button>
-  //     </SignInButton>
+  //     </Link>
   //   );
   // }
 

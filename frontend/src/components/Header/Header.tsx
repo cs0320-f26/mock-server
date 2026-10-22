@@ -1,5 +1,7 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { useUser, SignOutButton } from "@clerk/clerk-react";
+// import { useUser } from "../../firebase/useUser";
+// import { getAuth, signOut } from "firebase/auth";
+// import { app } from "../../firebase/firebaseConfig";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./Header.css";
@@ -45,8 +47,8 @@ export default function Header() {
         //TODO: uncomment these after firebase set up (Sprint 6)
         {isSignedIn ? (
           <div className="flex items-center gap-2">
-            <span>Hi, {user?.firstName}</span>
-            <SignOutButton />
+            <span>Hi, {user?.displayName}</span>
+            <button onClick={() => signOut(getAuth(app))}>Sign Out</button>
           </div>
         ) : (
           <Link to="/login">Log In</Link>

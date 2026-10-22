@@ -9,7 +9,7 @@ import { registerTileManagerHandler } from "./tile-manager/tileManagerHandler.js
 import { registerHighlightRedliningHandler } from "./red-linning/redLinningHandler.js";
 import { registerFilterHandler } from "./filter/filterHandler.js";
 import { registerFindPathHandler } from "./street-graph/bestRouteHandler.js";
-import { routeThroughStops } from "./street-graph/MultiStopAStar.js";
+import { routeThroughStops } from "./street-graph/multiStopAStar.js";
 import { registerSaveTripHandler } from "./firebase/registerSaveTripHandler.js";
 
 /**

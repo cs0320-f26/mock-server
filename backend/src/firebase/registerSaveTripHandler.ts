@@ -1,5 +1,5 @@
 import { Express, Request, Response } from "express";
-import { firestore } from "./firebaseSetUp.js";
+import { firestore } from "./firebasesetup.js";
 
 export function registerSaveTripHandler(app: Express) {
   app.post("/savePins", async (req: Request, res: Response) => {
